@@ -11,6 +11,7 @@ class TabBarDemo extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.black,
             bottom: TabBar(
               tabs: [
                 Tab(text: "Home"),
@@ -18,7 +19,11 @@ class TabBarDemo extends StatelessWidget {
                 Tab(text: "Rent"),
               ],
             ),
-            title: Text('Bike Zone'),
+            title: Image.asset(
+              'assets/logo.jpg',
+              height: 250,
+              width: 200,
+            ),
           ),
           body: TabBarView(
             children: [
