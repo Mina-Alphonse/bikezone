@@ -1,4 +1,4 @@
-import 'package:bikezone/pages/Home.dart';
+import 'package:bikezone/pages/TabBarPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
