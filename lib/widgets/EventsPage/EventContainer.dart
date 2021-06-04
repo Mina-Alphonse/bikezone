@@ -9,8 +9,13 @@ Widget eventContainer({
   final String description =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
 }) {
-  final double w = MediaQuery.of(context).size.width;
-  final double h = MediaQuery.of(context).size.height;
+  double w = MediaQuery.of(context).size.width;
+  double h = MediaQuery.of(context).size.height;
+
+  if (w < 800) {
+    h *= 1.4;
+    w *= 3.8;
+  }
 
   final TextStyle titleStyle = TextStyle(
     fontSize: w * 0.017,

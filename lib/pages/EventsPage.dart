@@ -1,4 +1,4 @@
-import 'package:bikezone/pages/RentPage.dart';
+// import 'package:bikezone/pages/RentPage.dart';
 import 'package:bikezone/widgets/EventsPage/EventContainer.dart';
 import 'package:flutter/material.dart';
 
@@ -6,11 +6,12 @@ class EventsPage extends StatelessWidget {
   final Color _backgroundColor = Colors.grey.shade900;
   @override
   Widget build(BuildContext context) {
-    final double w = MediaQuery.of(context).size.width;
-    final double h = MediaQuery.of(context).size.height;
+    double w = MediaQuery.of(context).size.width;
+    double h = MediaQuery.of(context).size.height;
 
     return Container(
       color: _backgroundColor,
+      width: MediaQuery.of(context).size.width,
       child: ListView(
           padding: EdgeInsets.fromLTRB(w * 0.04, h * 0.07, w * 0.04, h * 0.02),
           children: [
