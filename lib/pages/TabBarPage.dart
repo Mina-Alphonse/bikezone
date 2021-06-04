@@ -6,9 +6,12 @@ import 'package:flutter/material.dart';
 class TabBarDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final double w = MediaQuery.of(context).size.width;
+    final double h = MediaQuery.of(context).size.height;
+
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.black,
@@ -18,6 +21,7 @@ class TabBarDemo extends StatelessWidget {
                 Tab(text: "Home"),
                 Tab(text: "Events"),
                 Tab(text: "Rent"),
+                Tab(text: "Feedbacks"),
               ],
             ),
             title: Image.asset(
@@ -31,6 +35,19 @@ class TabBarDemo extends StatelessWidget {
               HomePage(),
               EventsPage(),
               RentPage(),
+              Container(
+                color: Colors.grey.shade900,
+                child: Center(
+                  child: Text(
+                    "No Feedbacks yet, stay tuned!",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontStyle: FontStyle.italic,
+                      fontSize: w * 0.04,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),

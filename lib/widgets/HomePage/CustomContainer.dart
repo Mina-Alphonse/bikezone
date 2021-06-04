@@ -8,8 +8,8 @@ Container customContainer({
   String content = "Some Content",
 }) {
   return Container(
-    height: h * 0.3,
-    width: w * 0.4,
+    height: h * 0.42,
+    width: w * 0.49,
     decoration: BoxDecoration(
       color: containerColor,
       borderRadius: BorderRadius.circular(30),
