@@ -27,7 +27,8 @@ Widget eventContainer({
     onTap: () => showDialog(
       context: context,
       builder: (context) => eventDialog(
-        context,
+        context: context,
+        name: name,
       ),
     ),
     child: Container(
