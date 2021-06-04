@@ -5,15 +5,23 @@ class RentPage extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Colors.green.shade700,
+      backgroundColor: Colors.grey.shade900,
       body: Container(
           width: size.width,
           child: ListView(
             children: [
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Wrap(
+                // mainAxisSize: MainAxisSize.max,
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // alignment: WrapAlignment.spaceEvenly,
                 children: [
+                  bikecards(),
+                  bikecards(),
+                  bikecards(),
+                  bikecards(),
+                  bikecards(),
+                  bikecards(),
+                  bikecards(),
                   bikecards(),
                   bikecards(),
                   bikecards(),

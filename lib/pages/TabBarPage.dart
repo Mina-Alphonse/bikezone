@@ -13,6 +13,7 @@ class TabBarDemo extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.black,
             bottom: TabBar(
+              indicatorColor: Colors.green,
               tabs: [
                 Tab(text: "Home"),
                 Tab(text: "Events"),
